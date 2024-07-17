@@ -24,43 +24,38 @@ public class contactInfo
 
 }
 
-public class urls
+public class accounts
 {
-    [JsonProperty("title")]
-    public string title { get; set; }
+    [JsonProperty("domain")]
+    public string domain { get; set; }
 
-    [JsonProperty("value")]
-    public string value { get; set; }
+    [JsonProperty("display")]
+    public string display { get; set; }
 
-}
+    [JsonProperty("url")]
+    public string url { get; set; }
 
-public class profileBackground
-{
-    [JsonProperty("opacity")]
-    public int opacity { get; set; }
+    [JsonProperty("iconUrl")]
+    public string iconUrl { get; set; }
 
-}
+    [JsonProperty("username")]
+    public string username { get; set; }
 
-public class shareflags
-{
-    [JsonProperty("search_engines")]
-    public bool searchengines { get; set; }
+    [JsonProperty("verified")]
+    public string verified { get; set; }
+
+    [JsonProperty("name")]
+    public string name { get; set; }
+
+    [JsonProperty("shortname")]
+    public string shortname { get; set; }
 
 }
 
 public class data
 {
-    [JsonProperty("hash")]
-    public string hash { get; set; }
-
-    [JsonProperty("requestHash")]
-    public string requestHash { get; set; }
-
     [JsonProperty("profileUrl")]
     public string profileUrl { get; set; }
-
-    [JsonProperty("preferredUsername")]
-    public string preferredUsername { get; set; }
 
     [JsonProperty("thumbnailUrl")]
     public string thumbnailUrl { get; set; }
@@ -68,11 +63,14 @@ public class data
     [JsonProperty("photos")]
     public photos[] photos { get; set; }
 
-    [JsonProperty("last_profile_edit")]
-    public string lastprofileedit { get; set; }
-
     [JsonProperty("displayName")]
     public string displayName { get; set; }
+
+    [JsonProperty("aboutMe")]
+    public string aboutMe { get; set; }
+
+    [JsonProperty("currentLocation")]
+    public string currentLocation { get; set; }
 
     [JsonProperty("company")]
     public string company { get; set; }
@@ -80,14 +78,14 @@ public class data
     [JsonProperty("contactInfo")]
     public contactInfo[] contactInfo { get; set; }
 
-    [JsonProperty("urls")]
-    public urls[] urls { get; set; }
+    [JsonProperty("accounts")]
+    public accounts[] accounts { get; set; }
 
-    [JsonProperty("profileBackground")]
-    public profileBackground profileBackground { get; set; }
+    [JsonProperty("link_images")]
+    public string linkimages { get; set; }
 
-    [JsonProperty("share_flags")]
-    public shareflags shareflags { get; set; }
+    [JsonProperty("username")]
+    public string username { get; set; }
 
 }
 
