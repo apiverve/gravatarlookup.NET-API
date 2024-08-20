@@ -81,9 +81,6 @@ public class data
     [JsonProperty("accounts")]
     public accounts[] accounts { get; set; }
 
-    [JsonProperty("link_images")]
-    public string linkimages { get; set; }
-
     [JsonProperty("username")]
     public string username { get; set; }
 
@@ -99,6 +96,9 @@ public class ResponseObj
 
     [JsonProperty("data")]
     public data data { get; set; }
+
+    [JsonProperty("code")]
+    public int code { get; set; }
 
 }
 
