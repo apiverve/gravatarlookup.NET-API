@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new gravatarlookupQueryOptions {
+var queryOptions = new GravatarLookupQueryOptions {
   email = "hello@apiverve.com"
 };
 ```
@@ -134,9 +134,9 @@ if(response.error != null) {
         "shortname": "calendly"
       }
     ],
-    "link_images": "show",
     "username": "apiverve"
-  }
+  },
+  "code": 200
 }
 ```
 
