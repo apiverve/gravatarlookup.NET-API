@@ -38,11 +38,14 @@ public class accounts
     [JsonProperty("iconUrl")]
     public string iconUrl { get; set; }
 
+    [JsonProperty("is_hidden")]
+    public bool ishidden { get; set; }
+
     [JsonProperty("username")]
     public string username { get; set; }
 
     [JsonProperty("verified")]
-    public string verified { get; set; }
+    public bool verified { get; set; }
 
     [JsonProperty("name")]
     public string name { get; set; }
